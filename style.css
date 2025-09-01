@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    line-height: 1.6;
+}
+
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: contain;
+    filter: brightness(0.5);
+    background-color: black;
+}
+
+#container {
+    display: flex;
+
+}
+
+/* Lado direito */
+.sidebar {
+    padding: 5rem;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+/*Lado esquerdo*/
+#content {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 3rem;
+    position: relative;
+    z-index: -1;
+}
+
+.img-Perfil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    margin-top: -3rem;
+    border-radius: 50%;
+    
+}
+
+#container .sidebar h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+#container .sidebar h1 span {
+   color: #1E90FF; 
+}
+
+.aboutMe, .skills, .projects {
+    border: 1px solid gray;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.skills ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 1rem;
+}
+
+.skills ul li img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: 1rem 1rem 0 0;
+}
+
+
+nav a .redes-Img {
+    width: 40px;
+    height: 40px;
+    margin: 1.5rem 2.5rem 3rem 0;
+}
+
+.projects ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 1rem;
+}
+
+.projects ul li img {
+    width: 50rem;
+    object-fit: cover;
+    margin: 1rem 1rem 0 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
