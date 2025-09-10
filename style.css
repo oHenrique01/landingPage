@@ -4,13 +4,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(18, 18, 18);
     color: white;
-    line-height: 1.6;
 }
 
 :root {
@@ -18,7 +19,13 @@ body {
     --secondary-font: 'Poppins', sans-serif;
 }
 
-#bgVideo {
+/*Estilização mobile com media queries*/
+
+
+
+/*Estilização desktop*/
+@media (min-width: 451px){
+    .background__video {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -30,30 +37,20 @@ body {
     background-color: black;
 }
 
-#container {
+.page-wrapper {
     display: flex;
-
 }
 
-/* Lado direito */
+/* Lado esquerdo */
 .sidebar {
     padding: 5rem;
     flex-direction: column;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
+    
 }
 
-/*Lado esquerdo*/
-#content {
-    display: flex;
-    flex-direction: column;
-    padding: 5rem;
-    gap: 3rem;
-    position: relative;
-    z-index: -1;
-}
-
-.img-Perfil {
+.sidebar__profile-img {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -63,7 +60,7 @@ body {
     
 }
 
-#container .sidebar h1 {
+.sidebar__title {
     font-family: var(--primary-font);
     font-size: 2.5rem;
     line-height: 1.1;
@@ -71,11 +68,30 @@ body {
 
 }
 
-#container .sidebar h1 span {
+.page-wrapper .sidebar h1 span {
    color: #1E90FF; 
 }
 
-.aboutMe, .skills, .projects {
+.sidebar__social-links img {
+    width: 40px;
+    height: 40px;
+    margin: 1.5rem 2.5rem 3rem 0;
+}
+
+
+/*Lado Esquerdo*/
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    gap: 3rem;
+}
+
+
+.section_aboutMe, .section_skills, .section_projects {
     border: 1px solid gray;
     padding: 1rem;
     border-radius: 8px;
@@ -83,7 +99,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.aboutMe h2, .skills h2, .projects h2 {
+h2 {
     font-family: var(--primary-font);
     font-size: 1.6rem;
     font-optical-sizing: auto;
@@ -99,20 +115,15 @@ p {
     color: #D3D3D3;
 }
 
-h3 {
-    font-family: var(--secondary-font);
-    font-size: 1.3rem;
-    
-}
-
-.skills ul {
+.section_skills ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     padding-left: 0;
     gap: 1rem;
 }
 
-.skills ul li img {
+.section_skills ul li img {
     width: 40px;
     height: 40px;
     object-fit: contain;
@@ -120,27 +131,25 @@ h3 {
 
 }
 
-nav a .redes-Img {
-    width: 40px;
-    height: 40px;
-    margin: 1.5rem 2.5rem 3rem 0;
-}
 
-.projects ul {
+.section_projects ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     padding-left: 0;
     gap: 1rem;
+    
 }
 
-.projects ul li img {
-    width: 50rem;
-    object-fit: cover;
-    margin: 1rem 1rem 0 0;
+.section_projects ul li img {
+    width: 700px; 
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    margin: 0.5rem 1rem;
 }
+
+
 
 footer {
     text-align: center;
@@ -152,3 +161,9 @@ footer {
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
 }
+
+}
+
+
+
+

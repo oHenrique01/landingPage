@@ -3,69 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Landing Page - Henrique Lira</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <video autoplay muted loop id="bgVideo">
+  <video autoplay muted loop class="background__video">
     <source src="midias/bgVideo/3129576-uhd_3840_2160_30fps.mp4" type="video/mp4">
   </video>
 
-  <div id="container">
-  <aside class="sidebar">
+  <div class="page-wrapper">
+    <aside class="sidebar">
 
-    <img class="img-Perfil" src="midias/perfil/perfilIMG.png" alt="perfil/img">
+      <img class="sidebar__profile-img" src="midias/perfil/perfilIMG.png" alt="Foto de perfil de Henrique Lira">
 
-    <h1>Olá, eu sou <br> 
-    <span>Henrique Lira</span>  <br> 
-    Desenvolvedor de Software</h1>
+      <h1 class="sidebar__title">Olá, eu sou <br> 
+      <span class="sidebar__name">Henrique Lira</span> <br> 
+      Desenvolvedor de Software</h1>
 
-    <p>Sou desenvolvedor front-end, estudante e apaixonado por tecnologia, ciência e aprendizado.</p>
-    <nav>
-        <a target="_blank" href="https://www.linkedin.com/in/henriqueliraspedro/"><img class="redes-Img" src="midias/skills/linkedin.png" alt="linkedin/img"></a>
+      <p class="sidebar__description">Sou desenvolvedor front-end, estudante e apaixonado por tecnologia, ciência e aprendizado.</p>
 
-        <a target="_blank" href="https://github.com/oHenrique01"><img class="redes-Img" src="midias/skills/github_5968866.png" alt="github/img"></a>
-    </nav>
-  </aside> 
+      <nav class="sidebar__social-links">
+        <a target="_blank" href="https://www.linkedin.com/in/henriqueliraspedro/">
+          <img class="social-links__icon" src="midias/skills/linkedin.png" alt="Ícone do LinkedIn">
+        </a>
 
-  <main id="content">
-    <section class="aboutMe">
-      <h2>Sobre mim</h2>
-      <p>Estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em início de carreira, com foco em Front-end. Estou em constante aprendizado, buscando sempre aprimorar minhas habilidades. Meu plano é crescer como profissional, expandindo meu conhecimento para o Back-end e, no futuro, desenvolver soluções completas e inovadoras.</p>
-    </section>
+        <a target="_blank" href="https://github.com/oHenrique01">
+          <img class="social-links__icon" src="midias/skills/github_5968866.png" alt="Ícone do GitHub">
+        </a>
+      </nav>
+    </aside> 
 
-    <section class="skills">
-      <h2>Minhas habilidades</h2>
-      <ul>
-        <li><img src="midias/skills/js.png" alt=""></li>
-        <li><img src="midias/skills/typescript_5968381.png" alt=""></li>
-        <li><img src="midias/skills/css-3_732190.png" alt=""></li>
-        <li><img src="midias/skills/html_1051277.png" alt=""></li>
-      </ul>
-    </section>
+    <main class="content">
+      <section class="section_aboutMe">
+        <h2 class="section__title">Sobre mim</h2>
+        <p class="about__text">Estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em início de carreira, com foco em Front-end. Estou em constante aprendizado, buscando sempre aprimorar minhas habilidades. Meu plano é crescer como profissional, expandindo meu conhecimento para o Back-end e, no futuro, desenvolver soluções completas e inovadoras.</p>
+      </section>
 
-    <section class="projects">
-      <h2>Meus projetos</h2>
-      <ul>
-        <h3>Landing Page Pizzaria Alessio´s</h3>
-        <li><img src="midias/img-Projects/Captura de tela 2025-08-29 192031.png" alt="imgProject-1"></li>
+      <section class="section_skills">
+        <h2 class="section__title">Minhas habilidades</h2>
+        <ul class="skills__list">
+          <li class="skills__item"><img class="skills__icon" src="midias/skills/js.png" alt="Ícone de JavaScript"></li>
+          <li class="skills__item"><img class="skills__icon" src="midias/skills/typescript_5968381.png" alt="Ícone de TypeScript"></li>
+          <li class="skills__item"><img class="skills__icon" src="midias/skills/css-3_732190.png" alt="Ícone de CSS3"></li>
+          <li class="skills__item"><img class="skills__icon" src="midias/skills/html_1051277.png" alt="Ícone de HTML5"></li>
+        </ul>
+      </section>
 
-        <h3>Calculadora moderna</h3>
-        <li><img src="midias/img-Projects/Captura de tela 2025-08-29 191712.png" alt="imgProject-2"></li>
+      <section class="section_projects">
+        <h2 class="section__title">Meus projetos</h2>
+        <ul>
+          <h3>Calculadora moderna</h3>
+            <p>Uma calculadora moderna e estilizada, desenvolvida com HTML, CSS e JavaScript. Possui funcionalidades básicas de uma calculadora tradicional, mas com um design atraente e responsivo.</p>
+          <li>
+            <img src="midias/img-Projects/Captura de tela 2025-08-29 191712.png" alt="img/projeto calculadora moderna">
+          </li>
+
+          <h3>Landing Page Alessio´s Pizzaria</h3>
+            <p>Uma landing page para a pizzaria fictícia "Alessio's Pizzaria", criada com HTML e CSS. A página apresenta o cardápio, promoções e informações de contato, com um design atraente e fácil de navegar.</p>
+          <li>
+            <img src="midias/img-Projects/Captura de tela 2025-08-29 192031.png" alt="img/projeto landing page pizzaria">
+          </li>
+
+          <h3>Calculadora de IMC</h3>
+            <p>Uma calculadora de Índice de Massa Corporal (IMC) desenvolvida com HTML, CSS e JavaScript. Permite aos usuários calcular seu IMC com base em peso e altura, fornecendo uma avaliação rápida da saúde corporal.</p>
+          <li>
+            <img src="midias/img-Projects/Captura de tela 2025-08-29 191859.png" alt="img/projeto site de receitas">
+          </li>
+
+        </ul>
         
-        <h3>Calculadora IMC</h3>
-        <li><img src="midias/img-Projects/Captura de tela 2025-08-29 191859.png" alt="imgProject-3"></li>
-        
-      </ul>
-      
-    </section>
-  </main>
-</div>
+      </section>
+    </main>
+  </div>
 
-<footer>
-    <span>Desenvolvido por Henrique Lira</span>
-</footer>
+  <footer class="footer">
+    <span class="footer__text">Desenvolvido por Henrique Lira</span>
+  </footer>
     
 </body>
 </html>
