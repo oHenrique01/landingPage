@@ -197,15 +197,21 @@ footer {
 }
 
 .page-wrapper {
+    width: 100%;
+    max-width: 1200px; /* ajuste conforme desejar */
+    margin: 0 auto;
+    gap: 5rem;
     display: flex;
+
 }
 
 /* Lado esquerdo */
 .sidebar {
-    padding: 5rem;
+    padding: 2rem;
     flex-direction: column;
     min-height: 100vh;
-    width: 100%;
+    width: 30%;
+    max-width: 350px; 
     
 }
 
@@ -214,16 +220,15 @@ footer {
     height: 150px;
     object-fit: cover;
     margin-bottom: 1rem;
-    margin-top: -3rem;
     border-radius: 50%;
     
 }
 
 .sidebar__title {
     font-family: var(--primary-font);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 1.1;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; 
 
 }
 
@@ -247,11 +252,14 @@ footer {
 .content {
     display: flex;
     flex-direction: column;
-    padding: 5rem;
+    padding: 2rem;
     position: relative;
     z-index: -1;
-    width: 100%;
+    width: 70%;
+    max-width: 900px; /* Limita a largura máxima */
     gap: 3rem;
+    
+    
 }
 
 
@@ -267,16 +275,20 @@ h2 {
     font-family: var(--primary-font);
     font-size: 1.6rem;
     font-optical-sizing: auto;
-    
+    margin-bottom: 1rem;
 }
 
 p {
-    margin: 0.5rem;
+    
     text-align: justify;
     font-family: var(--secondary-font);
     font-size: 1rem;
     line-height: 1.5;
     color: #D3D3D3;
+    white-space: normal;           /* permite quebras automáticas */
+    overflow-wrap: anywhere;      /* quebra em qualquer ponto necessário */
+    word-break: break-word; 
+    hyphens: auto;
 }
 
 .section_skills ul {
@@ -291,7 +303,7 @@ p {
     width: 40px;
     height: 40px;
     object-fit: contain;
-    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-right: 1rem;
 
 }
 
@@ -310,15 +322,13 @@ p {
 }
 
 .section_projects ul li img {
-    width: 800px; 
+    width: 700px; 
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-    margin: 0.5rem ;
 }
 
 .section_projects ul h3 {
-    margin: 0.3rem 0.5rem;
     font-size: 1.2rem;
     color: var(--secondary-font);
 }
