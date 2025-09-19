@@ -120,7 +120,7 @@ h2 {
 p {
     text-align: justify;
     font-family: var(--secondary-font);
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     color: #D3D3D3;
     white-space: normal;           /* permite quebras automáticas */
@@ -156,19 +156,23 @@ p {
     flex-direction: column;
     list-style-type: none;
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
     
 }
 
 .section_projects ul li img {
-    width: 800px; 
+    width: 200px; 
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-    margin: 0.5rem ;
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .section_projects ul h3 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--secondary-font);
 }
 
