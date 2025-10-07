@@ -8,9 +8,22 @@
 </head>
 <body>
 
+  <header class="header">
+    <nav class="header__navegation">
+      <ul>
+        <li><a href="#about" class="header__link">Sobre mim</a></li>
+        <li><a href="#skills" class="header__link">Habilidades</a></li>
+        <li><a href="#projects" class="header__link">Projetos</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
   <video autoplay muted loop playsinline class="background__video">
     <source src="midias/bgVideo/3129576-uhd_3840_2160_30fps.mp4" type="video/mp4">
   </video>
+
+  
 
   <!-- Lado Esquerdo (desk)/ Parte de cima (mobile) -->
   <div class="page-wrapper">
@@ -18,11 +31,14 @@
 
       <img class="sidebar__profile-img" src="midias/perfil/perfilIMG.png" alt="Foto de perfil de Henrique Lira">
 
-      <h1 class="sidebar__title">Olá, eu sou 
-      <span class="sidebar__name">Henrique Lira</span> 
-      Desenvolvedor de Software</h1>
+      <!-- Aqui entra o efeito typewriter -->
+      <h1 class="sidebar__title">
+        Henrique Lira
+      </h1>
 
-      <p class="sidebar__description">Sou desenvolvedor front-end, estudante e apaixonado por tecnologia, ciência e aprendizado.</p>
+      <p class="sidebar__description">
+        <span id="typed"></span>
+      </p>
 
       <nav class="sidebar__social-links">
         <a target="_blank" href="https://www.linkedin.com/in/henriqueliraspedro/">
@@ -37,12 +53,12 @@
 
     <!-- Lado direito (desk)/ Parte de baixo (mobile) -->
     <main class="content">
-      <section class="section_aboutMe">
+      <section  id="about" class="section_aboutMe">
         <h2 class="section__title">Sobre mim</h2>
         <p class="about__text">Estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em início de carreira, sempre buscando aprimorar meus conhecimentos e habilidades técnicas. Tenho interesse especial no desenvolvimento Full Stack, trabalhando com linguagens como JavaScript e Python, além de frameworks modernos, bancos de dados SQL e integração de APIs.</p>
       </section>
 
-      <section class="section_skills">
+      <section id="skills" class="section_skills">
         <h2 class="section__title">Minhas habilidades</h2>
         <ul class="skills__list">
           <li class="skills__item"><img class="skills__icon" src="midias/skills/js.png" alt="Ícone de JavaScript"></li>
@@ -52,46 +68,80 @@
         </ul>
       </section>
 
-      <section class="section_projects">
-  <h2 class="section__title">Meus projetos</h2>
-  <ul>
-    <h3>Calculadora moderna</h3>
-    <p>Uma calculadora moderna e estilizada, desenvolvida com HTML, CSS e JavaScript. Possui funcionalidades básicas de uma calculadora tradicional, mas com um design atraente e responsivo.</p>
-    <li>
-      <picture>
-        <source srcset="midias/img-Projects/project-calc-desk.png" media="(min-width: 451px)">
-        <source srcset="midias/img-Projects/midias-mobile/IMG_calcmoderna.webp" media="(max-width: 450px)">
-        <img src="midias/img-Projects/project-calc-desk.png" alt="Projeto Calculadora Moderna">
-      </picture>
-    </li>
+      <section id="projects" class="section_projects">
+        <h2 class="section_projects__title">Meus projetos</h2>
+        
+        <div class="projects__container">
+          <div class="projects__cards">
+            <picture>
+            <source srcset="midias/img-Projects/project-calc-desk.png" media="(min-width: 451px)" class="img-project-desk">
+            <source srcset="midias/img-Projects/midias-mobile/IMG_calcmoderna.webp" media="(max-width: 450px)" class="img-project-mobile">
+            <img src="midias/img-Projects/project-calc-desk.png" alt="Projeto Calculadora Moderna">
+            </picture>
+          
+              <div class="project-container-text">
+                <h3>Calculadora moderna</h3>
+                <p>Uma calculadora moderna e estilizada, desenvolvida com HTML, CSS e JavaScript. Possui funcionalidades básicas de uma calculadora tradicional, mas com um design atraente e responsivo.</p>
+              </div>
+          </div>
 
-    <h3>Landing Page Alessio´s Pizzaria</h3>
-    <p>Uma landing page para a pizzaria fictícia "Alessio's Pizzaria", criada com HTML e CSS. A página apresenta o cardápio, promoções e informações de contato, com um design atraente e fácil de navegar.</p>
-    <li>
-      <picture>
-        <source srcset="midias/img-Projects/project-pizzaria-desk.png" media="(min-width: 452px)">
-        <source srcset="midias/img-Projects/midias-mobile/IMG_lppizzaria.webp" media="(max-width: 450px)">
-        <img src="midias/img-Projects/project-pizzaria-desk.png" alt="Projeto Landing Page Pizzaria">
-      </picture>
-    </li>
+          <div class="projects__cards">
+            <picture>
+                <source srcset="midias/img-Projects/project-pizzaria-desk.png" media="(min-width: 452px)" class="img-project-desk">
+                <source srcset="midias/img-Projects/midias-mobile/IMG_lppizzaria.webp" media="(max-width: 450px)" class="img-project-mobile">
+                <img src="midias/img-Projects/project-pizzaria-desk.png" alt="Projeto Landing Page Pizzaria">
+              </picture>
 
-    <h3>Calculadora de IMC</h3>
-    <p>Uma calculadora de Índice de Massa Corporal (IMC) desenvolvida com HTML, CSS e JavaScript. Permite aos usuários calcular seu IMC com base em peso e altura, fornecendo uma avaliação rápida da saúde corporal.</p>
-    <li>
-      <picture>
-        <source srcset="midias/img-Projects/project-imc-desk.png" media="(min-width: 451px)">
-        <source srcset="midias/img-Projects/midias-mobile/IMG_calcIMC.webp" media="(max-width: 450px)">
-        <img src="midias/img-Projects/project-imc-desk.png" alt="Projeto Calculadora de IMC">
-      </picture>
-    </li>
-  </ul>
-</section>
+              <div class="project-container-text">
+                <h3>Landing Page Alessio´s Pizzaria</h3>
+                <p>Uma landing page para a pizzaria fictícia "Alessio's Pizzaria", criada com HTML e CSS. A página apresenta o cardápio, promoções e informações de contato, com um design atraente e fácil de navegar.</p>
+              </div>
+
+          </div>
+
+          <div class="projects__cards">
+            <picture>
+                  <source srcset="midias/img-Projects/project-imc-desk.png" media="(min-width: 451px)" class="img-project-desk">
+                  <source srcset="midias/img-Projects/midias-mobile/IMG_calcIMC.webp" media="(max-width: 450px)" class="img-project-mobile">
+                  <img src="midias/img-Projects/project-imc-desk.png" alt="Projeto Calculadora de IMC">
+                </picture>
+              <div class="project-container-text">
+                <h3>Calculadora de IMC</h3>
+                <p>Uma calculadora de Índice de Massa Corporal (IMC) desenvolvida com HTML, CSS e JavaScript. Permite aos usuários calcular seu IMC com base em peso e altura, fornecendo uma avaliação rápida da saúde corporal.</p>
+              </div>
+          </div>
+
+        </div>
+
+      </section>
+
     </main>
   </div>
+
+<aside id="contact" class="contact-section">
+        <h2 class="contact-title">Entre em contato</h2>
+        <form id="contact" class="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+ </aside>
 
   <footer class="footer">
     <span class="footer__text">Developed by Henrique Lira</span>
   </footer>
     
+  <!-- Biblioteca Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- Seu script externo -->
+  <script src="script.js"></script>
+
 </body>
 </html>

@@ -31,6 +31,7 @@ body {
     object-fit: cover;
     filter: brightness(0.5);
     background-color: black;
+    pointer-events: none;
 }
 
 /* Parte de cima */
@@ -40,11 +41,36 @@ body {
    
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    background-color: rgba(5, 5, 5, 0.632);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem 0;
+}
+
+.header__navegation ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.header__navegation ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--primary-font);
+    transition: color 0.3s ease;
+    font-size: 0.7rem;
+}
+
+
 .sidebar {
     padding: 2rem;
     margin-top: 1.5rem;
     flex-direction: column;
-    min-height: 30vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -96,14 +122,14 @@ body {
     position: relative;
     z-index: 1;
     width: 100%;
-    gap: 3rem;
+    gap: 7rem;
    
 }
 
 
 .section_aboutMe, .section_skills, .section_projects {
     border: 1px solid gray;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 8px;
     background-color: rgb(30, 30, 30);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -123,8 +149,8 @@ p {
     font-size: 0.7rem;
     line-height: 1.5;
     color: #D3D3D3;
-    white-space: normal;           /* permite quebras automáticas */
-    overflow-wrap: anywhere;      /* quebra em qualquer ponto necessário */
+    white-space: normal;        
+    overflow-wrap: anywhere;      
     word-break: break-word; 
     hyphens: auto;
 }
@@ -141,7 +167,7 @@ p {
     width: 30px;
     height: 30px;
     object-fit: contain;
-    margin-right: 1rem;
+    margin-right: .50rem;
 
 }
 
@@ -151,27 +177,49 @@ p {
 }
 
 
-.section_projects ul {
+.projects__container {
     display: flex;
     flex-direction: column;
-    list-style-type: none;
-    gap: 1rem;
-    
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width:  1200px;
+    margin: auto;
 }
 
-.section_projects ul li img {
-    width: 200px; 
-    height: auto;
+.projects__cards {
+    background-color: rgb(48, 48, 48);
     border-radius: 8px;
-    object-fit: cover;
-    margin: 1.1rem auto;    
-    display: block;
-  
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.3s;
 }
 
-.section_projects ul h3 {
-    font-size: 1rem;
-    color: var(--secondary-font);
+.projects__cards:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.5);
+}
+
+
+.projects__cards img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.project-container-text {
+    padding: 1.5rem;
+}
+
+.project-container-text h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project-container-text p {
+    line-height: 1.5;
+    color: #D3D3D3;
 }
 
 footer {
@@ -202,6 +250,7 @@ footer {
     object-fit: contain;
     filter: brightness(0.5);
     background-color: black;
+    pointer-events: none;
 }
 
 .page-wrapper {
@@ -262,7 +311,7 @@ footer {
     flex-direction: column;
     padding: 2rem;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     width: 70%;
     max-width: 900px; /* Limita a largura máxima */
     gap: 3rem;
@@ -320,28 +369,50 @@ p {
     transition: transform 0.5s ease;
 }
 
-
-.section_projects ul {
+.projects__container {
     display: flex;
     flex-direction: column;
-    list-style-type: none;
-    gap: 1rem;
-    
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width:  1200px;
+    margin: auto;
 }
 
-.section_projects ul li img {
-    width: 700px; 
-    height: auto;
+.projects__cards {
+    background-color: rgb(48, 48, 48);
     border-radius: 8px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.3s;
+}
+
+.projects__cards:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.5);
+}
+
+
+.projects__cards img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
+
 }
 
-.section_projects ul h3 {
-    font-size: 1.2rem;
-    color: var(--secondary-font);
+.project-container-text {
+    padding: 1.5rem;
 }
 
+.project-container-text h3 {
+    margin-bottom: 0.5rem;
+}
 
+.project-container-text p {
+    line-height: 1.5;
+    color: #D3D3D3;
+}
 
 footer {
     text-align: center;
