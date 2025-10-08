@@ -4,9 +4,23 @@ let typed = new Typed("#typed", {
 
     ],
 
-    typeSpeed: 50,
+    typeSpeed: 30,
     backSpeed: 0,
     smartBackspace: false,
     loop: false,
     showCursor: false
 })
+
+const formName = document.getElementById('name')
+const formEmail = document.getElementById('email')
+
+const formBtn = document.getElementById('form-btn').addEventListener('click', () => {
+    alert('Mensagem enviada!')
+
+    formName.value = ''
+    formEmail.value = ''
+    
+})
+
+
+

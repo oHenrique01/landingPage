@@ -609,6 +609,7 @@ p {
 
 footer {
     text-align: center;
+    font-size: 0.9rem;
     padding: 1rem;
     background-color: rgb(18, 18, 18);
     color: white;
