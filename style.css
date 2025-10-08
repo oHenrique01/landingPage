@@ -136,6 +136,19 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.section_aboutMe, .section_skills, .section_projects {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.section_aboutMe.visible,
+.section_skills.visible,
+.section_projects.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 h2 {
     font-family: var(--primary-font);
     font-size: 1rem;
@@ -438,6 +451,20 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.section_aboutMe, .section_skills, .section_projects {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.section_aboutMe.visible,
+.section_skills.visible,
+.section_projects.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 h2 {
     font-family: var(--primary-font);
     font-size: 1.1rem;
@@ -452,8 +479,8 @@ p {
     font-size: 0.88rem;
     line-height: 1.5;
     color: #D3D3D3;
-    white-space: normal;           /* permite quebras automáticas */
-    overflow-wrap: anywhere;      /* quebra em qualquer ponto necessário */
+    white-space: normal;        
+    overflow-wrap: anywhere;      
     word-break: break-word; 
     hyphens: auto;
 }

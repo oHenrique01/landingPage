@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Henrique Lira - Desenvolvedor Front-End apaixonado por tecnologia e aprendizado.">
+    <meta property="og:title" content="Henrique Lira | Desenvolvedor Front-End">
+    <meta property="og:description" content="Conheça meus projetos, habilidades e trajetória como desenvolvedor.">
+    <meta property="og:image" content="midias/perfil/perfilIMG.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ohenrique01.github.io/landingPage/">
     <title>Landing Page - Henrique Lira</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,7 +26,7 @@
   </header>
 
   <video autoplay muted loop playsinline class="background__video">
-    <source src="midias/bgVideo/3129576-uhd_3840_2160_30fps.mp4" type="video/mp4">
+    <source src="midias/bgVideo/3129576-uhd_3840_2160_30fps.mp4" type="video/mp4" preload="metadata" poster="midias/bgVideo/preview.jpg">
   </video>
 
   
@@ -41,11 +47,11 @@
       </p>
 
       <nav class="sidebar__social-links">
-        <a target="_blank" href="https://www.linkedin.com/in/henriqueliraspedro/">
+        <a target="_blank" href="https://www.linkedin.com/in/henriqueliraspedro/" aria-label="Link para o perfil do LinkedIn">
           <img class="social-links__icon" src="midias/skills/linkedin.png" alt="Ícone do LinkedIn">
         </a>
 
-        <a target="_blank" href="https://github.com/oHenrique01">
+        <a target="_blank" href="https://github.com/oHenrique01" aria-label="Link para o perfil do GitHub">
           <img class="social-links__icon" src="midias/skills/github_5968866.png" alt="Ícone do GitHub">
         </a>
       </nav>
@@ -120,7 +126,7 @@
 
 <aside id="contact" class="contact-section">
         <h2 class="contact-title">Entre em contato</h2>
-        <form id="contact" class="contact-form">
+        <form id="contact" class="contact-form" action="#">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
 
@@ -130,7 +136,7 @@
             <label for="message">Mensagem:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <button  type="button"  id="form-btn">Enviar</button>
+            <button  type="submit"  id="form-btn">Enviar</button>
         </form>
  </aside>
 

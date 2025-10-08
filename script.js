@@ -11,16 +11,36 @@ let typed = new Typed("#typed", {
     showCursor: false
 })
 
-const formName = document.getElementById('name')
-const formEmail = document.getElementById('email')
+const sections = document.querySelectorAll('.section_aboutMe, .section_skills, .section_projects');
 
-const formBtn = document.getElementById('form-btn').addEventListener('click', () => {
-    alert('Mensagem enviada!')
+window.addEventListener('scroll', () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) sec.classList.add('visible');
+  });
+});
 
-    formName.value = ''
-    formEmail.value = ''
-    
-})
+
+const form = document.querySelector('#contact');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const name = form.querySelector('#name').value.trim();
+  const email = form.querySelector('#email').value.trim();
+  const message = form.querySelector('#message').value.trim();
+
+  if (!name || !email || !message) {
+    alert('Por favor, preencha todos os campos.');
+    return;
+  }
+
+  alert('Mensagem enviada com sucesso!');
+  form.reset();
+});
+
+
+
 
 
 
