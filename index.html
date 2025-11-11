@@ -9,7 +9,6 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ohenrique01.github.io/landingPage/">
     <title>Henrique - Portifólio</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -25,16 +24,14 @@
   </header>
 
   <video autoplay muted loop playsinline class="background__video">
-    <source src="midias/bgVideo/3129576-uhd_3840_2160_30fps.mp4" type="video/mp4" preload="metadata" poster="midias/bgVideo/preview.jpg">
+    <source src="src/img/bgVideo/3129576-uhd_3840_2160_30fps.mp4" type="video/mp4" preload="metadata" poster="src/img/bgVideo/preview.jpg">
   </video>
-
-  
 
   <!-- Lado Esquerdo (desk)/ Parte de cima (mobile) -->
   <div class="page-wrapper">
     <aside class="sidebar">
 
-      <img class="sidebar__profile-img" src="midias/perfil/perfilIMG.png" alt="Foto de perfil de Henrique Lira">
+      <img class="sidebar__profile-img" src="src/img/perfil/perfilIMG.png" alt="Foto de perfil de Henrique Lira">
 
       
       <h1 class="sidebar__title">
@@ -45,7 +42,7 @@
         <span id="typed"></span>
       </p>
 
-      <button type="button" class="mail-btn">
+      <button type="button" id="contat" class="mail-btn">
         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
         </svg>
@@ -56,11 +53,11 @@
 
       <nav class="sidebar__social-links">
         <a target="_blank" href="https://www.linkedin.com/in/henriqueliraspedro/" aria-label="Link para o perfil do LinkedIn">
-          <img class="social-links__icon" src="midias/skills/linkedin.png" alt="Ícone do LinkedIn">
+          <img class="social-links__icon" src="src/img/skills/linkedin.png" alt="Ícone do LinkedIn">
         </a>
 
         <a target="_blank" href="https://github.com/oHenrique01" aria-label="Link para o perfil do GitHub">
-          <img class="social-links__icon" src="midias/skills/github_5968866.png" alt="Ícone do GitHub">
+          <img class="social-links__icon" src="src/img/skills/github_5968866.png" alt="Ícone do GitHub">
         </a>
       </nav>
     </aside> 
@@ -75,10 +72,10 @@
       <section id="skills" class="section_skills">
         <h2 class="section__title">Minhas habilidades</h2>
         <ul class="skills__list">
-          <li class="skills__item"><img class="skills__icon" src="midias/skills/js.png" alt="Ícone de JavaScript"></li>
-          <li class="skills__item"><img class="skills__icon" src="midias/skills/typescript_5968381.png" alt="Ícone de TypeScript"></li>
-          <li class="skills__item"><img class="skills__icon" src="midias/skills/css-3_732190.png" alt="Ícone de CSS3"></li>
-          <li class="skills__item"><img class="skills__icon" src="midias/skills/html_1051277.png" alt="Ícone de HTML5"></li>
+          <li class="skills__item"><img class="skills__icon" src="src/img/skills/js.png" alt="Ícone de JavaScript"></li>
+          <li class="skills__item"><img class="skills__icon" src="src/img/skills/typescript_5968381.png" alt="Ícone de TypeScript"></li>
+          <li class="skills__item"><img class="skills__icon" src="src/img/skills/css-3_732190.png" alt="Ícone de CSS3"></li>
+          <li class="skills__item"><img class="skills__icon" src="src/img/skills/html_1051277.png" alt="Ícone de HTML5"></li>
         </ul>
       </section>
 
@@ -88,9 +85,9 @@
         <div class="projects__container">
           <div class="projects__cards">
             <picture>
-            <source srcset="midias/img-Projects/project-calc-desk.png" media="(min-width: 451px)" class="img-project-desk">
-            <source srcset="midias/img-Projects/midias-mobile/IMG_calcmoderna.webp" media="(max-width: 450px)" class="img-project-mobile">
-            <img src="midias/img-Projects/project-calc-desk.png" alt="Projeto Calculadora Moderna">
+            <source srcset="src/img/img-Projects/project-calc-desk.png" media="(min-width: 451px)" class="img-project-desk">
+            <source srcset="src/img/img-Projects/midias-mobile/IMG_calcmoderna.webp" media="(max-width: 450px)" class="img-project-mobile">
+            <img src="src/img/img-Projects/project-calc-desk.png" alt="Projeto Calculadora Moderna">
             </picture>
           
               <div class="project-container-text">
@@ -101,9 +98,9 @@
 
           <div class="projects__cards">
             <picture>
-                <source srcset="midias/img-Projects/project-pizzaria-desk.png" media="(min-width: 452px)" class="img-project-desk">
-                <source srcset="midias/img-Projects/midias-mobile/IMG_lppizzaria.webp" media="(max-width: 450px)" class="img-project-mobile">
-                <img src="midias/img-Projects/project-pizzaria-desk.png" alt="Projeto Landing Page Pizzaria">
+                <source srcset="src/img/img-Projects/project-pizzaria-desk.png" media="(min-width: 452px)" class="img-project-desk">
+                <source srcset="src/img/img-Projects/midias-mobile/IMG_lppizzaria.webp" media="(max-width: 450px)" class="img-project-mobile">
+                <img src="src/img/img-Projects/project-pizzaria-desk.png" alt="Projeto Landing Page Pizzaria">
               </picture>
 
               <div class="project-container-text">
@@ -115,9 +112,9 @@
 
           <div class="projects__cards">
             <picture>
-                  <source srcset="midias/img-Projects/project-imc-desk.png" media="(min-width: 451px)" class="img-project-desk">
-                  <source srcset="midias/img-Projects/midias-mobile/IMG_calcIMC.webp" media="(max-width: 450px)" class="img-project-mobile">
-                  <img src="midias/img-Projects/project-imc-desk.png" alt="Projeto Calculadora de IMC">
+                  <source srcset="src/img/img-Projects/project-imc-desk.png" media="(min-width: 451px)" class="img-project-desk">
+                  <source srcset="src/img/img-Projects/midias-mobile/IMG_calcIMC.webp" media="(max-width: 450px)" class="img-project-mobile">
+                  <img src="src/img/img-Projects/project-imc-desk.png" alt="Projeto Calculadora de IMC">
                 </picture>
               <div class="project-container-text">
                 <h3>Calculadora de IMC</h3>
@@ -140,7 +137,7 @@
   <!-- Biblioteca Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  <script src="dist/js/script.js"></script>
+  <script src="dist/main.min.js"></script>
 
 </body>
 </html>
