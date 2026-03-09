@@ -1,17 +1,5 @@
 import '../styles/index.css';
 
-let typed = new Typed("#typed", {
-    strings: [
-        "Desenvolvedor front-end, estudante e apaixonado por tecnologia, ciência e aprendizado.",
-
-    ],
-
-    typeSpeed: 30,
-    backSpeed: 0,
-    smartBackspace: false,
-    loop: false,
-    showCursor: false
-})
 
 const sections = document.querySelectorAll('.section_aboutMe, .section_skills, .section_projects')
 
